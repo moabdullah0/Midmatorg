@@ -9,8 +9,8 @@ import BusinessCenterOutlinedIcon from '@mui/icons-material/BusinessCenterOutlin
 
 const SecondNav = () => {
   return (
-    <Box position={'relative'} top={'-6%'} display={'flex'} width={'100%'} borderColor={'black'} borderBottom={'solid'}>
-    <Box paddingRight={'3px'} borderBottom={'solid'} color={green[400]}><LineStyleIcon/></Box><Box paddingRight={'30px'} borderBottom={'solid'} color={green[400]}>Dashboard</Box>
+    <Box position={'relative'} top={'0%'} display={'flex'} width={'100%'} borderColor={'black'} borderBottom={'solid'}>
+    <Box paddingRight={'3px'} borderBottom={'solid'} color={green[600]}><LineStyleIcon/></Box><Box paddingRight={'30px'} borderBottom={'solid'} color={green[400]}>Dashboard</Box>
     <Box paddingRight={'3px'} ><MobiledataOffIcon/></Box>  <Box paddingRight={'30px'} >Logical framework</Box>
    
     <Box paddingRight={'3px'} ><LocalActivityIcon/></Box>  <Box paddingRight={'30px'} >Activities</Box>

@@ -3,6 +3,7 @@ import TitleandPro from "./TitleandPro"
 
 import InfoProject from "./InfoProject";
 import Projectmilestones from "./Projectmilestones";
+import ChartGrid from "./ChartGrid/ChartGrid";
 
 const Main = () => {
   return (
@@ -10,6 +11,7 @@ const Main = () => {
     <TitleandPro/>
   <InfoProject/>
   <Projectmilestones/>
+  <ChartGrid/>
     </>
   )
 }

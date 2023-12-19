@@ -1,5 +1,5 @@
 import { Box, Typography } from '@mui/material'
-import { yellow } from "@mui/material/colors"
+import {  grey, yellow } from "@mui/material/colors"
 import CloudUploadOutlinedIcon from '@mui/icons-material/CloudUploadOutlined';
 
 const InfoProject = () => {
@@ -10,7 +10,7 @@ return (
             Project Document :
         </Typography>
         <Typography paragraph fontSize={'10px'} marginLeft={'10px'} bgcolor={yellow[200]} display={'flex'}
-            justifyContent={'center'} alignItems={'center'}>
+            justifyContent={'center'} alignItems={'center'} color={grey[700]}>
             download <Box marginLeft={'4px'} fontSize={'-10px'} bgcolor={yellow[200]}>
                 <CloudUploadOutlinedIcon />
             </Box>

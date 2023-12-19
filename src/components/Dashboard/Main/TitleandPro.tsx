@@ -12,12 +12,11 @@ return (
         </Box>
 
         <Box position={'relative'} right={'0%'} display={'flex'} justifyContent={'start'} fontSize={'20px'}>
-            <Box width={'50px'} marginTop={'5px'}>
-                <ForwardOutlinedIcon />
-            </Box>
-
-            <Box>community Cohession as a Driver for Sustainable Development </Box>
-        </Box>
+      <Box display={'flex'} alignItems={'center'}>
+        <ForwardOutlinedIcon />
+        <Box marginLeft={1}>community Cohesion as a Driver for Sustainable Development</Box>
+      </Box>
+    </Box>
 
 
     </Box>
