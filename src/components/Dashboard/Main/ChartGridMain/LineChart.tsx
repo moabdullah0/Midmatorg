@@ -7,7 +7,7 @@ const LineChart = () => {
         data={{
           datasets: [
             {
-              label: "John",
+              label: "from donor:",
               data: [
                 {
                   x: 3,
@@ -17,7 +17,7 @@ const LineChart = () => {
               ],
             },
             {
-              label: "Peter",
+              label: "Expenses",
               data: [
                 {
                   x: 5,
@@ -28,7 +28,7 @@ const LineChart = () => {
               backgroundColor: "rgba(66, 133, 244, 0.2)",
             },
             {
-              label: "Donald",
+              label: "Remaining",
               data: [
                 {
                   x: 7,

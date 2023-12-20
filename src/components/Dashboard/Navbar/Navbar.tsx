@@ -29,8 +29,7 @@ const Navbar = () => {
           Midmar
         </AppBarTypography>
         <Box sx={{ display: "flex", flexDirection: "row" }}>
-        <Box marginTop={'20px'} color="black">
-
+          <Box marginTop={"20px"} color="black">
             <NotificationsActiveIcon />
           </Box>
           <Box

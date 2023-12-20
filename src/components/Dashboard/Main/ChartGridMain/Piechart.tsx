@@ -6,8 +6,8 @@ const Pieechart = () => {
     type="pie"
     data={{
       labels: [
-        "Monday",
-        "Tuesday",
+        "Remaining",
+        "Expenses",
        
       ],
       datasets: [

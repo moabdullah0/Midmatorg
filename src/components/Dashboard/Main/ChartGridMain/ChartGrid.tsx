@@ -15,13 +15,13 @@ const ChartGrid = () => {
                 <Pieechart />
                 <div className="flex flex-col">
                   <small className="">Budget Value:</small>
-                  <h5 className="text-blue-700 flex items-center">
+                  <h5 className="text-blue-700 flex items-center font-bold">
                     <SquareIcon />474,988.70€
                   </h5>
                   <small className="">Expenses:</small>
-                  <h5 className="text-green-700 flex items-center"><SquareIcon />400,000.00€</h5>
+                  <h5 className="text-green-700 flex items-center font-bold"><SquareIcon />400,000.00€</h5>
                   <small className="">Remaining:</small>
-                  <h5 className="text-gray-400 flex items-center"><SquareIcon />74,988.70€</h5>
+                  <h5 className="text-gray-400 flex items-center font-bold"><SquareIcon />74,988.70€</h5>
                 </div>
               </div>
             </div>
@@ -40,9 +40,9 @@ const ChartGrid = () => {
                     <SquareIcon />210,000.00€
                   </h5>
                   <small className="">Expenses:</small>
-                  <h5 className="text-green-700 flex items-center"><SquareIcon />400,000.00€</h5>
+                  <h5 className="text-green-700 flex items-center font-bold"><SquareIcon />400,000.00€</h5>
                   <small className="">Remaining:</small>
-                  <h5 className="text-red-600 flex items-center"><SquareIcon />-190,000.00</h5>
+                  <h5 className="text-red-600 flex items-center font-bold"><SquareIcon />-190,000.00</h5>
                 </div>
               </div>
             </div>

@@ -1,19 +1,20 @@
-
-import TitleandPro from "./TitleandPro"
+import TitleandPro from "./TitleandPro";
 
 import InfoProject from "./InfoProject";
 import Projectmilestones from "./Projectmilestones";
-import ChartGrid from "./ChartGrid/ChartGrid";
+import ChartGrid from "./ChartGridMain/ChartGrid";
+import ThreeGridItem from "../Footer/GridCards/GridItem";
 
 const Main = () => {
   return (
     <>
-    <TitleandPro/>
-  <InfoProject/>
-  <Projectmilestones/>
-  <ChartGrid/>
+      <TitleandPro />
+      <InfoProject />
+      <Projectmilestones />
+      <ChartGrid />
+      <ThreeGridItem />
     </>
-  )
-}
+  );
+};
 
-export default Main
+export default Main;
