@@ -6,45 +6,29 @@ import ErrorOutlineOutlinedIcon from "@mui/icons-material/ErrorOutlineOutlined";
 import BusinessCenterOutlinedIcon from "@mui/icons-material/BusinessCenterOutlined";
 
 const SecondNav = () => {
+  const Links = [
+    { title: "Dashboard", icon: <LineStyleIcon /> },
+    { title: "Logical framework", icon: <MobiledataOffIcon /> },
+    { title: "Budget", icon: <EarbudsOutlinedIcon /> },
+    { title: "Activities", icon: <LocalActivityIcon /> },
+    { title: "Risckes", icon: <ErrorOutlineOutlinedIcon /> },
+    { title: "Purches Order", icon: <BusinessCenterOutlinedIcon /> },
+  ];
+
   return (
     <div className="border-b-2">
       <div className="flex">
-        <a className="flex flex-row cursor-pointer mx-2 text-green-600 border-b-2 border-solid border-green-600">
-          <div>
-            <LineStyleIcon />
-          </div>
-          <h5>Dashboard</h5>
-        </a>
-        <a className="flex flex-row cursor-pointer mx-2 hover:text-green-600">
-          <div>
-            <MobiledataOffIcon />
-          </div>
-          <h5>Logical framework</h5>
-        </a>
-        <a className="flex flex-row cursor-pointer mx-3 hover:text-green-600">
-          <div>
-            <LocalActivityIcon />
-          </div>
-          <h5>Activities</h5>
-        </a>
-        <a className="flex flex-row cursor-pointer  mx-3 hover:text-green-600 ">
-          <div>
-            <EarbudsOutlinedIcon />
-          </div>
-          <h5>Budget</h5>
-        </a>
-        <a className="flex flex-row cursor-pointer mx-3 hover:text-green-600">
-          <div>
-            <ErrorOutlineOutlinedIcon />
-          </div>
-          <h5>Risckes</h5>
-        </a>
-        <a className="flex flex-row cursor-pointer hover:text-green-600">
-          <div>
-            <BusinessCenterOutlinedIcon />
-          </div>
-          <h5>Purches Order</h5>
-        </a>
+        {Links.map((link, index) => (
+          <a
+            key={index}
+            className={`flex flex-row cursor-pointer mx-2 hover:text-green-400 ${
+              index === 0 ? 'text-green-600 border-b-2 border-green-600' : ''
+            }`}
+          >
+            <div>{link.icon}</div>
+            <h5>{link.title}</h5>
+          </a>
+        ))}
       </div>
     </div>
   );
