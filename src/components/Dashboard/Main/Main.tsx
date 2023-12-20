@@ -1,7 +1,7 @@
-import TitleandPro from "./TitleandPro";
+import TitleandPro from "./FirstCardMain/TitleandPro";
 
-import InfoProject from "./InfoProject";
-import Projectmilestones from "./Projectmilestones";
+import InfoProject from "./FirstCardMain/InfoProject";
+import Projectmilestones from "./FirstCardMain/Projectmilestones";
 import ChartGrid from "./ChartGridMain/ChartGrid";
 import ThreeGridItem from "../Footer/GridCards/GridItem";
 

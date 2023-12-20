@@ -5,7 +5,7 @@ const TitleandPro = () => {
   return (
     <div>
       <Box display={"flex"} justifyContent={"start"} flexDirection={"column"}>
-        <Box position={"relative"} right={"45%"} fontStyle={"revert-layer"}>
+        <Box marginTop={'15px'} fontStyle={"revert-layer"}>
           <small>Project name</small>
         </Box>
 

@@ -16,32 +16,37 @@ const SecondNav = () => {
       width={"100%"}
       borderColor={"black"}
       borderBottom={"solid"}
+      
     >
       <Box paddingRight={"3px"} borderBottom={"solid"} color={green[600]}>
         <LineStyleIcon />
       </Box>
+      
       <Box paddingRight={"30px"} borderBottom={"solid"} color={green[400]}>
         Dashboard
       </Box>
-      <Box paddingRight={"3px"}>
+      <div>
+      <Box paddingRight={"3px"} >
         <MobiledataOffIcon />
-      </Box>{" "}
+      </Box>
+      </div>
+     
       <Box paddingRight={"30px"}>Logical framework</Box>
       <Box paddingRight={"3px"}>
         <LocalActivityIcon />
-      </Box>{" "}
+      </Box> 
       <Box paddingRight={"30px"}>Activities</Box>
       <Box paddingRight={"3px"}>
         <EarbudsOutlinedIcon />
-      </Box>{" "}
+      </Box> 
       <Box paddingRight={"30px"}>Budget</Box>
       <Box paddingRight={"3px"}>
         <ErrorOutlineOutlinedIcon />
-      </Box>{" "}
+      </Box> 
       <Box paddingRight={"30px"}>Risckes</Box>
       <Box paddingRight={"3px"}>
         <BusinessCenterOutlinedIcon />
-      </Box>{" "}
+      </Box>
       <Box paddingRight={"30px"}>Purches Order</Box>
     </Box>
   );
