@@ -7,7 +7,7 @@ import SecondPieChart from "../ChartsSection/SecondPieChart";
 const FourCard = () => {
   return (
     <div className="grid  grid-cols-2 gap-4 mt-10">
-      {/*Start Four Cards In Footer Dashboard */}
+  
       <Card>
         <CardContent>
           <div className="text-center">

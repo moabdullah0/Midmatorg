@@ -18,24 +18,12 @@ import HomeIcon from "@mui/icons-material/Home";
 import openedMixin from "./Sidebar/SidebarItems/openedMixin";
 import closedMixin from "./Sidebar/SidebarItems/closedMixin";
 import MuiDrawer from "@mui/material/Drawer";
-import Navbar from "./Navbar/Navbar";
-import SecondNav from "./Navbar/SecondNav";
-import AccountTreeIcon from "@mui/icons-material/AccountTree";
-import PortraitIcon from "@mui/icons-material/Portrait";
-import Main from "./Main/Main";
-import ReceiptLongIcon from "@mui/icons-material/ReceiptLong";
-import SupportAgentIcon from "@mui/icons-material/SupportAgent";
-import SettingsIcon from "@mui/icons-material/Settings";
+import Navbar from "./Navbar/InfoNavbar";
+
+
+import CustomDrawerHeader from "./Navbar/DrawerNavbar";
+import IconsSide from "../../data/SidebarData";
 export const drawerWidth = 240;
-
-const DrawerHeader = styled("div")(({ theme }) => ({
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "flex-end",
-  padding: theme.spacing(0, 1),
-
-  ...theme.mixins.toolbar,
-}));
 
 interface AppBarProps extends MuiAppBarProps {
   open?: boolean;
@@ -89,16 +77,6 @@ export default function MiniDrawer() {
     setOpen(false);
   };
 
-  const IconsSide = [
-    { icon: <AccountTreeIcon />, title: "Home" },
-    { icon: <PortraitIcon />, title: "Project" },
-
-    { icon: <ReceiptLongIcon />, title: "Policies and procedures" },
-    { icon: <SupportAgentIcon />, title: "Complaints" },
-    { icon: <SupportAgentIcon />, title: "Leave" },
-    { icon: <SettingsIcon />, title: "My panel" },
-  ];
-
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
@@ -120,7 +98,7 @@ export default function MiniDrawer() {
       </AppBar>
 
       <Drawer component={"aside"} variant="permanent" open={open}>
-        <DrawerHeader>
+        <CustomDrawerHeader theme={theme}>
           <IconButton onClick={handleDrawerClose}>
             {theme.direction === "rtl" ? (
               <ChevronRightIcon />
@@ -128,7 +106,7 @@ export default function MiniDrawer() {
               <ChevronLeftIcon />
             )}
           </IconButton>
-        </DrawerHeader>
+        </CustomDrawerHeader>
         <Divider />
         <List>
           {IconsSide.map((text, index) => (
@@ -159,8 +137,8 @@ export default function MiniDrawer() {
         </List>
         <Divider />
         <List>
-          {["All mail", "Trash", "Spam"].map((text, index) => (
-            <ListItem key={text} disablePadding sx={{ display: "block" }}>
+          {IconsSide.map((text, index) => (
+            <ListItem key={index} disablePadding sx={{ display: "block" }}>
               <ListItemButton
                 sx={{
                   minHeight: 48,
@@ -177,18 +155,14 @@ export default function MiniDrawer() {
                 >
                   {index === 0 ? <HomeIcon /> : IconsSide[index].icon}
                 </ListItemIcon>
-                <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
+                <ListItemText primary={text.title} sx={{ opacity: open ? 1 : 0 }} />
               </ListItemButton>
             </ListItem>
           ))}
         </List>
       </Drawer>
 
-      <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
-        <DrawerHeader />
-        <SecondNav />
-        <Main />
-      </Box>
+      
     </Box>
   );
 }
