@@ -5,11 +5,11 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 const TwoCard = () => {
   return (
     <div>
-      {/* Start Two Cards Flex With Four Cards */}
-      <Card className="h-[30%] mt-10">
+    
+      <Card className="h-[30%] w-auto mt-10 items-center justify-center">
         <CardContent>
-          <div className="flex flex-row">
-            <div className="flex flex-col items-center">
+          <div className="flex lg:flex-row sm:flex-col items-center justify-center">
+            <div className="flex lg:flex-row items-center">
               <h5 className="text-blue-600 mx-5 font-bold">300,988.70</h5>
               <small className="text-center">Earned Value (EV)</small>
             </div>
@@ -26,8 +26,8 @@ const TwoCard = () => {
       {/* Second Card */}
       <Card className="h-[40%] mt-10">
         <CardContent>
-          <h5>Project Performance </h5>
-          <div className="grid grid-cols-3 ">
+          <h5 className="pb-5">Project Performance </h5>
+          <div className="grid lg:grid-cols-3 h-auto">
             <div className="flex flex-col justify-center items-center  border-r-2 mx-2">
               <small className="font-bold text-blue-600 text-lg">
                 0.7

@@ -26,7 +26,7 @@ const Navbar = () => {
         }}
       >
         <AppBarTypography marginTop={"20px"} variant="h6" noWrap>
-          Midmar
+         
         </AppBarTypography>
         <Box sx={{ display: "flex", flexDirection: "row" }}>
           <Box marginTop={"20px"} color="black">

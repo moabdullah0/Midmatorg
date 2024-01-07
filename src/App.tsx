@@ -9,9 +9,9 @@ function App() {
   return (
     <>
       <MiniDrawer />
-      <div className='px-20'>
+      
       <Maintest theme={theme} />
-      </div>
+   
       
     </>
   );

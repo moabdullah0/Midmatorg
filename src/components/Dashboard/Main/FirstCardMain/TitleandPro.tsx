@@ -18,9 +18,11 @@ const TitleandPro = () => {
         >
           <Box display={"flex"} alignItems={"center"}>
             <ForwardOutlinedIcon />
-            <Box marginLeft={1}>
+           <h1 className="flex flex-wrap">
+           
               community Cohesion as a Driver for Sustainable Development
-            </Box>
+            
+           </h1>
           </Box>
         </Box>
       </Box>

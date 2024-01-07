@@ -18,9 +18,9 @@ const Projectmilestones = () => {
           >
             <div>
               <Box>Project milestones</Box>
-              <div className="bg-blue-100 w-[50%] justify-center items-center p-3 rounded-lg mt-5">
+              <div className="bg-blue-100 w-[100%] justify-center items-center p-3 rounded-lg mt-5">
                 <h5 className="text-blue-400 font-bold">milestone 2</h5>
-                <small className="text-sm">
+                <small className="text-sm ">
                   Simple description Simple description Simple description
                 </small>
               </div>

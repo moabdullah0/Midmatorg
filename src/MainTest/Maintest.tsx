@@ -10,7 +10,7 @@ interface Themes{
   }
 const Maintest = ({theme}:Themes) => {
   return (
-    <div >
+    <div className='px-10' >
       <Box component="main" sx={{ flexGrow: 1, p: 3 }} >
         <CustomDrawerHeader theme={theme}/>
         <SecondNav />

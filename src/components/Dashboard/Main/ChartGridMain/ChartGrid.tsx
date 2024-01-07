@@ -6,7 +6,7 @@ import LineChart from "./LineChart";
 const ChartGrid = () => {
   return (
     <>
-      <div className="grid grid-cols-2 gap-4 mt-10">
+      <div className="grid lg:grid-cols-2 gap-4 mt-10">
       <Card>
           <CardContent>
             <div className="text-center">
@@ -30,9 +30,9 @@ const ChartGrid = () => {
 
         <Card>
           <CardContent>
-            <div className="text-center">
+            <div className="text-center flex flex-col">
               <h1>Donor payments</h1>
-              <div className="flex flex-row items-center w-[70%]">
+              <div className="flex lg:flex-row  items-center w-[70%]">
                 <LineChart />
                 <div className="flex flex-col">
                   <small className="">Total payments from donor: </small>
