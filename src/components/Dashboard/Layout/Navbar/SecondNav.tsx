@@ -22,7 +22,7 @@ const SecondNav: React.FC = () => {
   return (
     <div className="border-b-2">
       <div className="flex">
-        {/* Render all links for larger screens */}
+     
         <Hidden smDown>
           {SecondNavData.map((link: SecondNavLink, index: number) => (
             <a
@@ -37,18 +37,18 @@ const SecondNav: React.FC = () => {
           ))}
         </Hidden>
 
-        {/* Render a menu icon for smaller screens */}
+       
         <Hidden mdUp>
-          {/* Open the menu on click */}
+         
           <a
             className="flex flex-row cursor-pointer mx-2 hover:text-green-400"
             onClick={handleClick}
           >
-            <div>{/* Menu icon, e.g., hamburger icon */}</div>
+           
             <h5><FormatListBulletedIcon/></h5>
           </a>
 
-          {/* Mobile menu */}
+     
           <Menu
             anchorEl={anchorEl}
             open={Boolean(anchorEl)}

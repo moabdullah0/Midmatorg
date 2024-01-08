@@ -47,7 +47,7 @@ const Navbar = () => {
               />
             </Box>
             <Box margin={"10px"}>
-              <AppBarTypography noWrap>Akeel Bakour</AppBarTypography>
+              <AppBarTypography noWrap>’Mohamad Alibrahim</AppBarTypography>
               <ChiledBarTypography>Project officer</ChiledBarTypography>
             </Box>
             <Box marginTop={"20px"}>
