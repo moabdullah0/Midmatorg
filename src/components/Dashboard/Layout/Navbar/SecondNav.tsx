@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Hidden, Menu, MenuItem } from '@mui/material';
-import SecondNavData from '../../../data/SecondNavData';
+
 import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
+import SecondNavData from '../../../../data/SecondNavData';
 interface SecondNavLink {
   icon: React.ReactNode;
   title: string;

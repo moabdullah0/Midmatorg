@@ -30,11 +30,11 @@ const ChartGrid = () => {
 
         <Card>
           <CardContent>
-            <div className="text-center flex flex-col">
+            <div className="text-center flex flex-col ">
               <h1>Donor payments</h1>
               <div className="flex lg:flex-row  items-center w-[70%]">
                 <LineChart />
-                <div className="flex flex-col">
+                <div className="flex flex-col px-[-10]">
                   <small className="">Total payments from donor: </small>
                   <h5 className="text-blue-700 flex items-center">
                     <SquareIcon />210,000.00€

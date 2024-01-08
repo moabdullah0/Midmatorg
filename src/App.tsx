@@ -1,7 +1,6 @@
-
 import { useTheme } from "@mui/material/styles";
-import MiniDrawer from "./components/Dashboard/DashboardHome";
-import Maintest from "./MainTest/Maintest";
+import MiniDrawer from "./components/Dashboard/Layout/LayoutHome";
+import Maintest from "./components/Dashboard/Home/Home";
 
 function App() {
   const theme = useTheme();
@@ -9,10 +8,8 @@ function App() {
   return (
     <>
       <MiniDrawer />
-      
+
       <Maintest theme={theme} />
-   
-      
     </>
   );
 }

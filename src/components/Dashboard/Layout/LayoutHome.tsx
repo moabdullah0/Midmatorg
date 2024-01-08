@@ -22,7 +22,8 @@ import Navbar from "./Navbar/InfoNavbar";
 
 
 import CustomDrawerHeader from "./Navbar/DrawerNavbar";
-import IconsSide from "../../data/SidebarData";
+import IconsSide from "../../../data/SidebarData";
+
 export const drawerWidth = 240;
 
 interface AppBarProps extends MuiAppBarProps {
